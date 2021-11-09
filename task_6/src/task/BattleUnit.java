@@ -1,6 +1,7 @@
 package task;
 
 public class BattleUnit {
+
     private int Strength;
     private int Armor;
     private int Health;

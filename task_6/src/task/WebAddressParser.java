@@ -1,36 +1,7 @@
 package task;
-/*
- *   Создать в пакете task класс согласно описанию:
- * ---------------------------------------------------------------------
- *   Название: WebAddressParser
- *   Смысл: Синтаксический анализатор веб-адресов
- *   Конструкторы:
- *      - принимающий единственный аргумент - строку с некоторым адресом
- *   Публичные методы:
- *      - String getLogin() - возвращает логин
- *      - String getPassword() - возвращает пароль
- *      - String getScheme() - возвращает схему
- *      - boolean isValid() - является ли адрес корректным
- *      - String getHost() - возвращает хост
- *      - String getPort() - возвращает порт
- *      - String getUrl() - возвращает url-путь
- *      - HashMap<String, String> getParameters() - возвращает словарь
- *          параметров с их значениями
- *      - String getFragment() - возвращает якорь
- *   Дополнительно:
- *      - информация о структуре адреса тут
- *          https://ru.wikipedia.org/wiki/URL#Структура_URL
- *      - в случае, если адрес невалиден или некоторый элемент
- *        отсутствует, соответствующие методы возвращают пустой объект
- * ---------------------------------------------------------------------
- *   Набор private членов класса может быть произвольным.
- *   Все поля класса должны быть private
- *   Не должно быть публичных членов класса сверх списка из условия
- */
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
-
 
 public class WebAddressParser {
     private URL Url1;
@@ -92,13 +63,13 @@ public class WebAddressParser {
             return "";
         }
     }public String getPort(){
-    if(isValid() && Url1.getPort() != -1) {
-        return Integer.toString(Url1.getPort());
+        if(isValid() && Url1.getPort() != -1) {
+            return Integer.toString(Url1.getPort());
+        }
+        else {
+            return "";
+        }
     }
-    else {
-        return "";
-    }
-}
 
     public String getUrl(){
         if(isValid()) {
