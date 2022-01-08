@@ -15,7 +15,7 @@ public class CompanyDocsTest extends Assert{
         companyDocs.addContract ("number","data");
         assertEquals(1, companyDocs.getContractsCount());
     }
-    @Test
+    @Test//
     public void addContract_AddContractsWithNullName_ThrowException() {
         CompanyDocs companyDocs = CompanyDocs.create();
         var exc = assertThrows(IllegalArgumentException.class, () -> companyDocs.addContract(null,"date"));
