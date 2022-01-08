@@ -10,4 +10,10 @@ public class CompanyDocsTest extends Assert{
         CompanyDocs companyDocs = CompanyDocs.create();
         assertEquals(0, companyDocs.getContractsCount());
     }
+    @Test
+    public void addContract_AddContractWithNumberAndDate_ContractsCountEqualsOne() {
+        CompanyDocs companyDocs = CompanyDocs.create();
+        companyDocs.addContract("1","20220108");
+        assertEquals(0, companyDocs.getContractsCount());
+    }
 }
