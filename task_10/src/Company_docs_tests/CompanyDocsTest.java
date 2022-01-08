@@ -9,6 +9,7 @@ public class CompanyDocsTest extends Assert{
         CompanyDocs companyDocs = CompanyDocs.create();
         assertEquals(0, companyDocs.getContractsCount());
     }
+    //
     @Test
     public void addContract_AddContractsWithNumberAndData_ContractsCountEqualsOne() {
         CompanyDocs companyDocs = CompanyDocs.create();
