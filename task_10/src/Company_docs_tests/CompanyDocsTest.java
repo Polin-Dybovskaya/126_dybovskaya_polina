@@ -13,7 +13,7 @@ public class CompanyDocsTest extends Assert {
     @Test
     public void addContract_AddContractsWithNumberAndData_ContractsCountEqualsOne() {
         CompanyDocs companyDocs = CompanyDocs.create();
-        companyDocs.addContract("number", "data");
+        companyDocs.addContract("number", "date");
         assertEquals(1, companyDocs.getContractsCount());
     }
 
@@ -27,6 +27,12 @@ public class CompanyDocsTest extends Assert {
     public void addContract_AddContractsWithNullData_ThrowsException() {
         CompanyDocs companyDocs = CompanyDocs.create();
         var exc = assertThrows(IllegalArgumentException.class, () -> companyDocs.addContract("number",null));
-        assertTrue(exc.getMessage().toLowerCase().contains("data can't be null"));
+        assertTrue(exc.getMessage().toLowerCase().contains("date can't be null"));
+    }
+    @Test
+    public void addContract_AddContractsWithNullDataAndNullNumber_ThrowsException() {
+        CompanyDocs companyDocs = CompanyDocs.create();
+        var exc = assertThrows(IllegalArgumentException.class, () -> companyDocs.addContract(null,null));
+        assertTrue(exc.getMessage().toLowerCase().contains("number and date cannot be null"));
     }
 }
