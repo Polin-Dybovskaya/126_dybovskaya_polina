@@ -1,6 +1,6 @@
 package Company_docs_tests;
 
-import Company_docs_core.CompanyDocs;
+import Company_docs_core.*;
 import org.junit.*;
 
 //
