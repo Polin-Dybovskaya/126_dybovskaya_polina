@@ -5,7 +5,11 @@ public class CompanyDocs {
     private CompanyDocs(){
         contractCount=0;
     }
-    public void addContract(String number, String data){
+    public void addContract(String number, String data) {
+        if(number==null)
+            throw new IllegalArgumentException("Number can't be null");
+        if(data==null)
+            throw new IllegalArgumentException("Data can't be null");
         contractCount++;
 
     }
