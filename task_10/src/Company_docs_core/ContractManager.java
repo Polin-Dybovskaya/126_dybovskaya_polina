@@ -27,7 +27,7 @@ public class ContractManager {
     public int getContractsCount(){
         return ListOfContract.size();
     }
-    public void registerPaymentDocument(int sum, int number, String docType, int contractNumber, int date) {
+    public void registerPaymentDocument(int sum, int number, DocType docType, int contractNumber, int date) {
         ListOfContract.get(contractNumber).registerPaymentDocument(sum, number, docType, date);
 
     }
