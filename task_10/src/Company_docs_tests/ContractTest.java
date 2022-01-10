@@ -34,7 +34,7 @@ public class ContractTest extends Assert {
             assertEquals(1, ListOfContracts.getContractsList().get(2).getDocumentsListSize());
 
         }
-
+//
     @Test
     public void getSum_getSumOfPaymentsOfContract_sumEquals1000() throws Exception {
         ContractManager ListOfContracts = ContractManager.create();
