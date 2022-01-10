@@ -5,24 +5,34 @@ import java.util.HashMap;
 public class Contract {
     private final int date;
     private int Summa;
-    private HashMap <Integer, PaymentDocs> docsList = new HashMap<Integer, PaymentDocs>();
+    private int count = 0;
+    private HashMap<Integer, PaymentDocs> docsList = new HashMap<Integer, PaymentDocs>();
 
 
     public Contract(int date) {
-            this.date = date;
+        this.date = date;
     }
-    public void registerPaymentDocument(int sum, int number, DocType docType, int date){
+
+    public void registerPaymentDocument(int sum, int number, DocType docType, int date) {
         if (sum > 0 && number > 0 && String.valueOf(date).length() == 8) {
             docsList.put(number, new PaymentDocs(sum, docType, date));
-            Summa=sum+Summa;
+            Summa = sum + Summa;
+            count++;
         }
     }
 
     public int getDocumentsListSize() {
-            return docsList.size();
+        return docsList.size();
     }
 
-    public int getSumOfPayments(){
+    public int getSumOfPayments() {
         return Summa;
+    }
+
+    public void deletePayment(int num, int contractNum, int date){
+
+    }
+    public int getSummaOfPayments(){
+        return 0;
     }
 }
