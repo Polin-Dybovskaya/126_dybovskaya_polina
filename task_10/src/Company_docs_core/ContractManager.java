@@ -3,15 +3,20 @@ package Company_docs_core;
 import java.util.HashMap;
 
 public class ContractManager {
-    private HashMap<String, Contract> ListOfContracts;
+    private HashMap<Integer, Contract>  ListOfContract;
 
-    private ContractManager(){
-        ListOfContracts = new HashMap<String, Contract>();
+    public HashMap<Integer, Contract> getContractsList(){
+        return ListOfContract;
     }
 
-    public void addContract(String number, String date){
+
+    private ContractManager(){
+        ListOfContract = new HashMap<Integer, Contract>();
+    }
+
+    public void addContract(Integer number, Integer date){
         if (number != null) {
-            ListOfContracts.put(number, new Contract(date));
+            ListOfContract.put(number, new Contract(date));
         }
     }
 
@@ -20,6 +25,10 @@ public class ContractManager {
     }
 
     public int getContractsCount(){
-        return ListOfContracts.size();
+        return ListOfContract.size();
+    }
+    public void registerPaymentDocument(int sum, int number, String docType, int contractNumber, int date) {
+        ListOfContract.get(contractNumber).registerPaymentDocument(sum, number, docType, date);
+
     }
 }

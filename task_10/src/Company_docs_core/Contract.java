@@ -1,9 +1,17 @@
 package Company_docs_core;
 
 public class Contract {
-    private final String date;
+    private final int date;
+    public int getDocumentsListSize;
 
-    public Contract(String date) {
-        this.date = date;
+    public Contract(int date) {
+            this.date = date;
     }
+    public void registerPaymentDocument(int sum, int number, String docType, int date){
+
+    }
+    public int getDocumentsListSize (){
+        return 1;
+    }
+
 }
