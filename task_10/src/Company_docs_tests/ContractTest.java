@@ -41,7 +41,7 @@ public class ContractTest extends Assert {
         ListOfContracts.addContract(1, 20220101);
         ListOfContracts.registerPaymentDocument(500, 1, DocType.BankOrder, 1, 20220110);
         ListOfContracts.registerPaymentDocument(500, 1, DocType.BankOrder, 1, 20220110);
-        ListOfContracts.addContract(2, 20220101);
+        ListOfContracts.addContract(2, 20220111);
         ListOfContracts.registerPaymentDocument(900, 1, DocType.BankOrder, 2, 20220110);
         ListOfContracts.registerPaymentDocument(100, 1, DocType.BankOrder, 2, 20220110);
         assertEquals(1000, ListOfContracts.getContractsList().get(1).getSumOfPayments());

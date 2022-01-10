@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 public class Contract {
     private final int date;
+    private int Summa;
     private HashMap <Integer, PaymentDocs> docsList = new HashMap<Integer, PaymentDocs>();
 
 
@@ -11,12 +12,17 @@ public class Contract {
             this.date = date;
     }
     public void registerPaymentDocument(int sum, int number, DocType docType, int date){
-        docsList.put(number, new PaymentDocs(sum, docType, date));
-
+        if (sum > 0 && number > 0 && String.valueOf(date).length() == 8) {
+            docsList.put(number, new PaymentDocs(sum, docType, date));
+            Summa=sum+Summa;
+        }
     }
 
     public int getDocumentsListSize() {
             return docsList.size();
     }
 
+    public int getSumOfPayments(){
+        return Summa;
+    }
 }

@@ -31,4 +31,5 @@ public class ContractManager {
         ListOfContract.get(contractNumber).registerPaymentDocument(sum, number, docType, date);
 
     }
+
 }
