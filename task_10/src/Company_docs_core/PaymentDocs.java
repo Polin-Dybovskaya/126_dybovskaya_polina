@@ -10,4 +10,8 @@ public class PaymentDocs {
         this.docType = docType;
         this.date = date;
     }
+
+    public int getSumma(){
+        return sum;
+    }
 }
