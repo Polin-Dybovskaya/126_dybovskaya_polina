@@ -27,9 +27,10 @@ public class Contract {
         return Summa;
     }
     public void deletePayment(int num, int contractNum, int date){
-
+        docsList.remove(num);
+        count--;
     }
     public int getSummaOfPayments(){
-        return 0;
+        return count;
     }
 }
