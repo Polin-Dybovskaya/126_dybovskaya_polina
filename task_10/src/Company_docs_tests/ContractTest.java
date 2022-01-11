@@ -35,19 +35,20 @@ public class ContractTest extends Assert {
         assertEquals(0, ListOfContracts.getContractsList().get(1).getSumOfPayments());
     }
     @Test
-    public void getSum_getSumOfPaymentsOfContract_sumEquals1000(){
+    public void getSum_getSumOfPaymentsOfContract_sumEquals1000(){//потом надо переписать с исключениями!!!!!
         ContractManager ListOfContracts = ContractManager.create();
         ListOfContracts.addContract(1, 20220110);
         ListOfContracts.registerDocument(500, 1, DocType.BankOrder, 1, 20220110);
         ListOfContracts.registerDocument(500, 1, DocType.BankOrder, 1, 20220110);
         ListOfContracts.addContract(2, 20220110);
+        //throws Exception НЕ ЗАБЫТЬ
         ListOfContracts.registerDocument(900, 1, DocType.BankOrder, 2, 20220110);
         ListOfContracts.registerDocument(100, 1, DocType.BankOrder, 2, 20220110);
         assertEquals(1000, ListOfContracts.getContractsList().get(1).getSumOfPayments());
         assertEquals(1000, ListOfContracts.getContractsList().get(2).getSumOfPayments());
     }
     @Test
-    public void deletePayment_deletePayment_SummaOfPaymentsEqualsZero(){
+    public void deletePayment_deletePayment_SummaOfPaymentsEqualsZero(){//потом надо переписать с исключениями
         ContractManager contractsList = ContractManager.create();
         contractsList.addContract(1, 20220110);
         contractsList.registerDocument(500, 1, DocType.BankOrder, 1, 20220110);
@@ -58,24 +59,26 @@ public class ContractTest extends Assert {
         contractsList.getContractsList().get(1).deletePayment(3, 1, 20220110);
         assertEquals(0, contractsList.getContractsList().get(1).getSummaOfPayments());
     }
+    //
     @Test
-    public void deletePayment_deletePayment_AmountOfPaymentsEqualsTheRightNumber(){
+    public void deletePayment_deletePayment_SummaOfPaymentsEqualsTheRightNumber(){
         ContractManager contractsList = ContractManager.create();
         contractsList.addContract(1, 20220101);
-        contractsList.registerDocument(500, 1, DocType.BankOrder, 1, 20220101);
-        contractsList.registerDocument(133, 2, DocType.BankOrder, 1, 20220101);
-        contractsList.registerDocument(333, 3, DocType.BankOrder, 1, 20220101);
-
+        contractsList.registerDocument(500, 1, DocType.BankOrder, 1, 20220110);
+        contractsList.registerDocument(100, 2, DocType.BankOrder, 1, 20220110);
+        contractsList.registerDocument(300, 3, DocType.BankOrder, 1, 20220110);
+//потом надо переписать с throws Exception?
         contractsList.addContract(2, 20220101);
-        contractsList.registerDocument(11, 1, DocType.BankOrder, 2, 20220101);
-        contractsList.registerDocument(22, 2, DocType.BankOrder, 2, 20220101);
-        contractsList.registerDocument(33, 3, DocType.BankOrder, 2, 20220101);
-
-        contractsList.getContractsList().get(1).deletePayment(1, 1, 20220101);
+        //ПЕРЕПРОВЕРИТЬ ТЕСТ
+        contractsList.registerDocument(100, 1, DocType.BankOrder, 2, 20220110);
+        contractsList.registerDocument(200, 2, DocType.BankOrder, 2, 20220110);
+        contractsList.registerDocument(300, 3, DocType.BankOrder, 2, 20220110);
+//упростить суммы
+        contractsList.getContractsList().get(1).deletePayment(1, 1, 20220110);
         assertEquals(2, contractsList.getContractsList().get(1).getSummaOfPayments());
 
-        contractsList.getContractsList().get(2).deletePayment(3, 1, 20220101);
-        contractsList.getContractsList().get(2).deletePayment(1, 1, 20220101);
+        contractsList.getContractsList().get(2).deletePayment(3, 1, 20220110);
+        contractsList.getContractsList().get(2).deletePayment(1, 1, 20220110);
         assertEquals(1, contractsList.getContractsList().get(2).getSummaOfPayments());
     }
 }
