@@ -1,6 +1,6 @@
 package Company_docs_core;
 
-import java.util.ArrayList;
+import java.util.ArrayList;//
 import java.util.HashMap;
 
 public class Contract {
