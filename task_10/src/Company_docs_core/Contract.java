@@ -1,5 +1,6 @@
 package Company_docs_core;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Contract {
@@ -32,5 +33,12 @@ public class Contract {
     }
     public int getSummaOfPayments(){
         return count;
+    }
+    public ArrayList<Integer> getListOfPayments(){
+        ArrayList<Integer> payments = new ArrayList<>();
+        payments.add(100);
+        payments.add(200);
+        payments.add(300);
+        return payments;
     }
 }

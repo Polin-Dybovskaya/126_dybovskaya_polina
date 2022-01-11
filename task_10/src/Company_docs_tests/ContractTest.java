@@ -3,6 +3,7 @@ package Company_docs_tests;
 import Company_docs_core.*;
 import org.junit.*;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ContractTest extends Assert {
@@ -87,16 +88,13 @@ public class ContractTest extends Assert {
         ContractManager ListOfContracts= ContractManager.create();
         ListOfContracts.addContract(1, 20220101);
         ListOfContracts.registerDocument(100, 1, DocType.BankOrder, 1, 20220110);
-        PaymentDocs one = new PaymentDocs(100, DocType.BankOrder, 20220110);
         ListOfContracts.registerDocument(200, 2, DocType.BankOrder, 1, 20220110);
-        PaymentDocs two = new PaymentDocs(200, DocType.BankOrder, 20220110);
         ListOfContracts.registerDocument(300, 3, DocType.BankOrder, 1, 20220110);
-        PaymentDocs three = new PaymentDocs(300, DocType.BankOrder, 20220110);
-        HashMap<Integer, PaymentDocs> docsList = new HashMap<Integer, PaymentDocs>();
-        docsList.put(1, one);
-        docsList.put(2, two);
-        docsList.put(3, three);
-        assertEquals(docsList, ListOfContracts.getContractsList().get(1).getListOfPayments());
+        ArrayList<Integer> payments = new ArrayList<>();
+        payments.add(100);
+        payments.add(200);
+        payments.add(300);
+        assertEquals(payments, ListOfContracts.getContractsList().get(1).getListOfPayments());
     }
 }
 
