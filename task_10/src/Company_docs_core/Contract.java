@@ -27,18 +27,22 @@ public class Contract {
     public int getSumOfPayments(){
         return Summa;
     }
-    public void deletePayment(int num, int contractNum, int date){
-        docsList.remove(num);
-        count--;
+    public void deletePayment(int num){
+        if (!docsList.containsKey(num)){
+            System.out.println("Документа с таким номером не существует, пожалуйста, уточните данные. ");
+        }
+        else {
+            Summa = Summa - docsList.get(num).getSumma();
+            docsList.remove(num);
+            count--;
+            System.out.println("Платёж был удалён");
+        }
     }
     public int getSummaOfPayments(){
         return count;
     }
-    public ArrayList<Integer> getListOfPayments(){//???
+    public ArrayList<Integer> getListOfPayments(){//
         ArrayList<Integer> payments = new ArrayList<>();
-        //payments.add(100);
-       // payments.add(200);
-       // payments.add(300);
         for (PaymentDocs doc : docsList.values()) {
             payments.add(doc.getSumma());
         }
