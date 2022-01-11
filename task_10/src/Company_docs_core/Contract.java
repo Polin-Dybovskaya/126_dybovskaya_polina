@@ -16,23 +16,12 @@ public class Contract {
     public void registerPaymentDocument(int sum, int number, DocType docType, int date) {
         if (sum > 0 && number > 0 && String.valueOf(date).length() == 8) {
             docsList.put(number, new PaymentDocs(sum, docType, date));
-            Summa = sum + Summa;
-            count++;
         }
     }
-
-    public int getDocumentsListSize() {
+    public int getDocumentsListSize () {
         return docsList.size();
-    }
-
-    public int getSumOfPayments() {
-        return Summa;
-    }
-
-    public void deletePayment(int num, int contractNum, int date){
-
-    }
-    public int getSummaOfPayments(){
+        }
+    public int getSumOfPayments(){
         return 0;
     }
 }
