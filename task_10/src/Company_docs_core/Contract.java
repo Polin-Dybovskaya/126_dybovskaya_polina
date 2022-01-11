@@ -34,11 +34,14 @@ public class Contract {
     public int getSummaOfPayments(){
         return count;
     }
-    public ArrayList<Integer> getListOfPayments(){
+    public ArrayList<Integer> getListOfPayments(){//???
         ArrayList<Integer> payments = new ArrayList<>();
-        payments.add(100);
-        payments.add(200);
-        payments.add(300);
+        //payments.add(100);
+       // payments.add(200);
+       // payments.add(300);
+        for (PaymentDocs doc : docsList.values()) {
+            payments.add(doc.getSumma());
+        }
         return payments;
     }
 }
