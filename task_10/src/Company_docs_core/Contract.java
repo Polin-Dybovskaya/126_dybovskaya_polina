@@ -1,6 +1,7 @@
 package Company_docs_core;
 
 import java.util.ArrayList;//
+import java.util.Collection;
 import java.util.HashMap;
 
 public class Contract {
@@ -8,6 +9,7 @@ public class Contract {
     private int Summa;
     private int count = 0;
     private HashMap<Integer, PaymentDocs> docsList = new HashMap<Integer, PaymentDocs>();
+    private ArrayList<Integer> docz = new ArrayList<>();
 
 
     public Contract(int date) {
@@ -19,7 +21,11 @@ public class Contract {
             docsList.put(number, new PaymentDocs(sum, docType, date));
             Summa= Summa+sum;
             count++;
+            docz.add(number);
         }
+    }
+    public ArrayList<Integer> getListOfDocsNumbers(){
+        return docz;
     }
     public int getDocumentsListSize () {
         return docsList.size();
@@ -35,6 +41,7 @@ public class Contract {
             Summa = Summa - docsList.get(num).getSumma();
             docsList.remove(num);
             count--;
+            docz.remove(num);
             System.out.println("Платёж был удалён");
         }
     }
@@ -48,4 +55,5 @@ public class Contract {
         }
         return payments;
     }
+
 }

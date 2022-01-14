@@ -37,7 +37,7 @@ public class ContractManager {
     }
 
     public void registerDocument(int sum, int number, DocType docType, int contractNumber, int date) throws Exception{
-        if (ListOfContract.get(contractNumber).getListOfPayments().contains(number)) {
+        if (ListOfContract.get(contractNumber).getListOfDocsNumbers().contains(number)) {
             throw new Exception("Документ с таким номером уже существует, пожалуйста, уточните данные.");
         }
         else {

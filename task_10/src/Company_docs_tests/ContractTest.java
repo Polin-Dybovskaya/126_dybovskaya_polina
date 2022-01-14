@@ -84,7 +84,7 @@ public class ContractTest extends Assert {
         assertEquals(1, ListOfContracts.getContractsList().get(2).getSummaOfPayments());
     }
     @Test
-    public void getPayments_getListOfPaymentsOfContract_gotListOfPayments() throws Exception{//??? not work???
+    public void getPayments_getListOfPaymentsOfContract_gotListOfPayments() throws Exception{
         ContractManager ListOfContracts= ContractManager.create();
         ListOfContracts.addContract(1, 20220101);
         ListOfContracts.registerDocument(111, 1, DocType.BankOrder, 1, 20220110);
