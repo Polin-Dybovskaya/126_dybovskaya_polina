@@ -24,4 +24,3 @@ public class DummyNode<T> implements ListNode<T> {
         this.prev = prev;
     }
 }
-//
