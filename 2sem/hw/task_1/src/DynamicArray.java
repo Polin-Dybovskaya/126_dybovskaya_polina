@@ -8,7 +8,7 @@ public class DynamicArray<T> {
 
     public DynamicArray() {
         data = new Object[DefaultSize];
-        size = 1;
+        size = DefaultSize; // mist
         capacity = DefaultSize;
     }
     public DynamicArray(int size) {
