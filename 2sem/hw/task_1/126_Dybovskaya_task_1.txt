@@ -1,0 +1,16 @@
+
+DynamicArray |11| size = 1; -> size = DefaultSize;                                | createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize
+DynamicArray |15| data = new Object[capacity]; -> data = new Object[size];        | setNumbers_SetTwoNumbers_NumbersCorrect
+DynamicArray |21| if(newSize > 0); -> if(newSize < 0);                            | resize_SizeNumber_NewSizeIsCorrect
+DynamicArray |27| newSize = size; -> size= newSize;                               | resize_SizeNumber_NewSizeIsCorrect
+DynamicArray |30| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToGetOut_GetIndexOutOfBoundsException
+DynamicArray |35| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToSetOut_GetIndexOutOfBoundsException
+DynamicArray |40| if(index < 0 || index > size) -> if(index < 0 || index >= size);| insert_NumbersWithIndexEqualsSize_ThrowsException
+DynamicArray |42| (capacity < size) -> if(capacity <= size)                       | insert_insertNumbers_NumbersCorrect
+DynamicArray |49| data[size] = value; -> data[index] = value; || index >= size);  | insert_insertNumbers_NumbersCorrect
+DynamicArray |52| if(capacity < size) -> if(capacity == size)                     | pushBack_pushBackNumber_NumberCorrect
+DynamicArray |56| data[capacity] = value; -> data[size] = value;                  | pushBack_pushBackNumber_NumberCorrect
+DynamicArray |60| if(size < 0) -> if(size == 0)                                   | popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException
+DynamicArray |66| if(index < 0 || index > size) -> if(index < 0 || index >= size) | remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException
+
+

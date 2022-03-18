@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="createArray_CreateArrayWithSize_SizeEqualsNumber">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="createArray_TryToGetValueOut_GetIndexOutOfBoundsException">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +49,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.createArray_TryToGetValueOut_GetIndexOutOfBoundsException">
+  <component name="RunManager" selected="JUnit.Task1_Tests.resize_SizeNumber_NewSizeCorrect">
     <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -54,31 +59,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.createArray_CreateArrayWithSize_SizeEqualsNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createArray_CreateArrayWithSize_SizeEqualsNumber" />
+      <option name="METHOD_NAME" value="popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize" />
+      <option name="METHOD_NAME" value="remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.createArray_TryToGetValueOut_GetIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.remove_RemoveOneValue_ValuesAreCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createArray_TryToGetValueOut_GetIndexOutOfBoundsException" />
+      <option name="METHOD_NAME" value="remove_RemoveOneValue_ValuesAreCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.resize_SizeNumber_NewSizeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="resize_SizeNumber_NewSizeCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -86,10 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.createArray_TryToGetValueOut_GetIndexOutOfBoundsException" />
-        <item itemvalue="JUnit.Task1_Tests.createArray_CreateArrayWithSize_SizeEqualsNumber" />
+        <item itemvalue="JUnit.Task1_Tests.resize_SizeNumber_NewSizeCorrect" />
         <item itemvalue="JUnit.Task1_Tests" />
-        <item itemvalue="JUnit.Task1_Tests.createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize" />
+        <item itemvalue="JUnit.Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" />
+        <item itemvalue="JUnit.Task1_Tests.popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" />
+        <item itemvalue="JUnit.Task1_Tests.remove_RemoveOneValue_ValuesAreCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647624892203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="createArray_TryToGetValueOut_GetIndexOutOfBoundsException">
+      <created>1647625277404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1647625277405</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,6 +165,7 @@
     <MESSAGE value="/" />
     <MESSAGE value="createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize" />
     <MESSAGE value="createArray_CreateArrayWithSize_SizeEqualsNumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="createArray_CreateArrayWithSize_SizeEqualsNumber" />
+    <MESSAGE value="createArray_TryToGetValueOut_GetIndexOutOfBoundsException" />
+    <option name="LAST_COMMIT_MESSAGE" value="createArray_TryToGetValueOut_GetIndexOutOfBoundsException" />
   </component>
 </project>
