@@ -15,7 +15,7 @@ DynamicArray |66| if(index < 0 || index > size) -> if(index < 0 || index >= size
 
 DoubleLinkedList |11| return dummy == dummy; -> return dummy == dummy.getNext();      | pushFront_PushFrontToEmptyList_EmptyIsFalse
 DoubleLinkedList |24| if(index < 0 || index > size) -> if(index < 0 || index >= size) |get_getNumberByIndexEqualsSize_IndexOutOfBoundsException
-DoubleLinkedList ||  ->  |
+DoubleLinkedList |33|  ->  |
 DoubleLinkedList ||  ->  |
 DoubleLinkedList ||  ->  |
 DoubleLinkedList ||  ->  |

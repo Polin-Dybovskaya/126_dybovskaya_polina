@@ -30,7 +30,7 @@ public class DoubleLinkedList<T> {
     }
 
     public Node<T> insertAfter(ListNode<T> node, T data) {
-        --size;
+        ++size;//mist
         return new Node<T>(data, node.getNext(), node);
     }
     public Node<T> insertBefore(ListNode<T> node, T data) {

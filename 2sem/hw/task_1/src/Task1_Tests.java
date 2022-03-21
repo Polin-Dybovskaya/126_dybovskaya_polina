@@ -149,7 +149,7 @@ public class Task1_Tests extends Assert {
         assertEquals(false,List.isEmpty());
     }
     @Test
-    public void pushBack_pushToEmptyList_SizeEqualsOne(){
+    public void pushBack_pushToEmptyList_SizeEqualsOne(){//33
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
         list.pushBack(20);
         assertEquals(1, list.getSize());
