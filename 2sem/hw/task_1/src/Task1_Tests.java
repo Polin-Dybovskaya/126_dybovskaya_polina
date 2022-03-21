@@ -213,6 +213,16 @@ public class Task1_Tests extends Assert {
         assertEquals(300, head.getData().intValue());
         assertEquals(100, tail.getData().intValue());
     }
+    @Test
+    public void pushFront_pushToEmptyList_HeadAndTailIsCorrect() {
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(100);
+        Node<Integer> head = (Node<Integer>) List.getHead();
+        Node<Integer> tail = (Node<Integer>) List.getTail();
+        assertEquals(100, head.getData().intValue());
+        assertEquals(100, tail.getData().intValue());
+        assertEquals(head, tail);
+    }
 }
 
 
