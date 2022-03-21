@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test no works getNextAndPrev_getDataOfNextAndPrevNumber_Correct">
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647890729711</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="test no works getNextAndPrev_getDataOfNextAndPrevNumber_Correct">
+      <created>1647892718157</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1647892718157</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +210,7 @@
     <MESSAGE value="test works" />
     <MESSAGE value="test works getSize_GetSizeTwo_SizeCorrect" />
     <MESSAGE value="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-    <option name="LAST_COMMIT_MESSAGE" value="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
+    <MESSAGE value="test no works getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="test no works getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
   </component>
 </project>

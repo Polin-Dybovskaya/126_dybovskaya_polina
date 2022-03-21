@@ -156,7 +156,7 @@ public class Task1_Tests extends Assert {
         assertEquals(2, List.getSize());
     }
     @Test
-    public void getNextAndPrev_getDataOfNextAndPrevNumber_Correct(){
+    public void getNextAndPrev_getDataOfNextAndPrevNumber_Correct(){//node13-14
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
 
         Node<Integer> num1 = list.pushFront(100);
