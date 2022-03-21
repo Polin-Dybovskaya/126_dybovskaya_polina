@@ -13,4 +13,9 @@ DynamicArray |56| data[capacity] = value; -> data[size] = value;                
 DynamicArray |60| if(size < 0) -> if(size == 0)                                   | popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException
 DynamicArray |66| if(index < 0 || index > size) -> if(index < 0 || index >= size) | remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException
 
-
+DoubleLinkedList ||  ->  |
+DoubleLinkedList ||  ->  |
+DoubleLinkedList ||  ->  |
+DoubleLinkedList ||  ->  |
+DoubleLinkedList ||  ->  |
+DoubleLinkedList ||  ->  |

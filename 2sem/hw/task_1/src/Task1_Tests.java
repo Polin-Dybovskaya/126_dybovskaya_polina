@@ -2,7 +2,7 @@ import org.junit.*;
 
 public class Task1_Tests extends Assert {
 
-//DynamicArray...................
+//..................DynamicArray.................
 
 
     @Test
@@ -136,6 +136,28 @@ public class Task1_Tests extends Assert {
         assertEquals(3, array.get(1).intValue());
 
     }
+
+//....................DoubleLinkedList ...................
+
+    @Test
+    public void createList_CreateEmptyList_SizeIsEmpty() {
+       DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        assertEquals(true, List.isEmpty());
+    }
+    @Test
+    public void pushFront_PushFrontToEmptyList_EmptyIsFalse() {
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(100);
+        assertEquals(false,List.isEmpty());
+    }
+
+
+
+
+
+
+
+
 }
 
 
