@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test works">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,52 +47,52 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.getSize_GetSizeTwo_SizeCorrect">
-    <configuration name="Task1_Tests.createList_CreateEmptyList_SizeIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task1_Tests.getNextAndPrev_getDataOfNextAndPrevNumber_Correct">
+    <configuration name="Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createList_CreateEmptyList_SizeIsEmpty" />
+      <option name="METHOD_NAME" value="getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.getSize_GetSizeTwo_SizeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.getNextAndPrev_getDataOfNextAndPrevNumber_Correct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="getSize_GetSizeTwo_SizeCorrect" />
+      <option name="METHOD_NAME" value="getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_PushFrontToEmptyList_EmptyIsFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.getNext_getDataOfNextNumber_Correct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_PushFrontToEmptyList_EmptyIsFalse" />
+      <option name="METHOD_NAME" value="getNext_getDataOfNextNumber_Correct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_PushFrontToEmptyList_SizeNoEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.get_GetNumberByIndexSize_Correct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_PushFrontToEmptyList_SizeNoEmpty" />
+      <option name="METHOD_NAME" value="get_GetNumberByIndexSize_Correct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.resize_SizeNumber_NewSizeCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.pushFront_PushFrontToEmptyList_GettingErrorWhenTryingToGetItemNumberOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="resize_SizeNumber_NewSizeCorrect" />
+      <option name="METHOD_NAME" value="pushFront_PushFrontToEmptyList_GettingErrorWhenTryingToGetItemNumberOne" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.getSize_GetSizeTwo_SizeCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_EmptyIsFalse" />
-        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_SizeNoEmpty" />
-        <item itemvalue="JUnit.Task1_Tests.createList_CreateEmptyList_SizeIsEmpty" />
-        <item itemvalue="JUnit.Task1_Tests.resize_SizeNumber_NewSizeCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
+        <item itemvalue="JUnit.Task1_Tests.getNext_getDataOfNextNumber_Correct" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_PushFrontToEmptyList_GettingErrorWhenTryingToGetItemNumberOne" />
+        <item itemvalue="JUnit.Task1_Tests.get_GetNumberByIndexSize_Correct" />
+        <item itemvalue="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647889135091</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="test works getSize_GetSizeTwo_SizeCorrect">
+      <created>1647889470816</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1647889470816</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+      <created>1647890729711</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1647890729711</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -186,6 +203,8 @@
     <MESSAGE value="DynamicArray tests" />
     <MESSAGE value="tests: createList_CreateEmptyList_SizeIsEmpty and pushFront_PushFrontToEmptyList_EmptyIsFalse" />
     <MESSAGE value="test works" />
-    <option name="LAST_COMMIT_MESSAGE" value="test works" />
+    <MESSAGE value="test works getSize_GetSizeTwo_SizeCorrect" />
+    <MESSAGE value="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
+    <option name="LAST_COMMIT_MESSAGE" value="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
   </component>
 </project>

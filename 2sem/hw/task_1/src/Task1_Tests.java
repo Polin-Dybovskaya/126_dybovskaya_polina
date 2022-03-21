@@ -22,13 +22,11 @@ public class Task1_Tests extends Assert {
         try {
             DynamicArray<Integer> array = new DynamicArray<>(100);
             array.resize(200);
-
             assertEquals(200, array.getSize());
         } catch (Exception e) {
             fail();
         }
     }
-    // IndexOutOfBoundsException ?????????
 
     @Test
     public void createArray_GetOutOfBounds_GetIndexOutOfBoundsException() {//30
@@ -158,6 +156,20 @@ public class Task1_Tests extends Assert {
         assertEquals(2, List.getSize());
     }
     @Test
+    public void getNextAndPrev_getDataOfNextAndPrevNumber_Correct(){
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+
+        Node<Integer> num1 = list.pushFront(100);
+        Node<Integer> num3 = list.pushFront(300);
+        Node<Integer> num = new Node<Integer>(200, num1, num3);
+
+        Node<Integer> next = (Node<Integer>) num.getNext();
+        Node<Integer> prev = (Node<Integer>) num.getPrev();
+
+        assertEquals(100, next.getData().intValue());
+        assertEquals(300, prev.getData().intValue());
+    }
+    @Test
     public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
@@ -168,6 +180,7 @@ public class Task1_Tests extends Assert {
         assertEquals(300, head.getData().intValue());
         assertEquals(100, tail.getData().intValue());
     }
+
 }
 
 
