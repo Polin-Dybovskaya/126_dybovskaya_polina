@@ -182,14 +182,7 @@ public class Task1_Tests extends Assert {
         assertEquals(100, next.getData().intValue());
         assertEquals(300, prev.getData().intValue());
     }
-    @Test
-    public void get_getNumberByIndex_NumberCorrect(){
-        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
-        List.pushBack(200);
-        List.pushBack(100);
-        Node<Integer> num = (Node<Integer>) List.get(1);
-        assertEquals(100, num.getData().intValue());
-    }
+
     @Test
     public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){//24
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
@@ -202,6 +195,7 @@ public class Task1_Tests extends Assert {
             assertTrue(true);
         }
     }
+
     @Test
     public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
@@ -223,6 +217,7 @@ public class Task1_Tests extends Assert {
         assertEquals(100, tail.getData().intValue());
         assertEquals(head, tail);
     }
+
 }
 
 

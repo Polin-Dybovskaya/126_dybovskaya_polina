@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test works: pushBack_pushToEmptyList_SizeEqualsOne">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +50,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.pushFront_pushToEmptyList_HeadAndTailIsCorrect">
+  <component name="RunManager" selected="JUnit.Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect">
     <configuration name="Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -67,11 +71,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushBack_pushToEmptyList_SizeEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushBack_pushToEmptyList_SizeEqualsOne" />
+      <option name="METHOD_NAME" value="pushFront_pushThreeElements_HeadAndTailIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_pushToEmptyList_SizeEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.pushItems_PushFrontThreeItems_FirstItemIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_pushToEmptyList_SizeEqualsOne" />
+      <option name="METHOD_NAME" value="pushItems_PushFrontThreeItems_FirstItemIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect" />
         <item itemvalue="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
         <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_NumberCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.pushBack_pushToEmptyList_SizeEqualsOne" />
-        <item itemvalue="JUnit.Task1_Tests.pushFront_pushToEmptyList_SizeEqualsOne" />
+        <item itemvalue="JUnit.Task1_Tests.pushItems_PushFrontThreeItems_FirstItemIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -221,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647896005811</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect">
+      <created>1647896319059</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1647896319059</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -252,6 +263,7 @@
     <MESSAGE value="tests works get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
     <MESSAGE value="tests: pushFront_pushToEmptyList_SizeEqualsOne and pushBack_pushToEmptyList_SizeEqualsOne" />
     <MESSAGE value="test works: pushBack_pushToEmptyList_SizeEqualsOne" />
-    <option name="LAST_COMMIT_MESSAGE" value="test works: pushBack_pushToEmptyList_SizeEqualsOne" />
+    <MESSAGE value="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
+    <option name="LAST_COMMIT_MESSAGE" value="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
   </component>
 </project>
