@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test works getNextAndPrev_getDataOfNextAndPrevNumber_Correct">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="tests works get_getNumberByIndexEqualsSize_IndexOutOfBoundsException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
@@ -48,32 +46,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.get_getNumberByIndexEqualsSize_IndexOutOfBoundsException">
-    <configuration name="Task1_Tests.createList_CreateEmptyList_SizeIsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="126_Dybovskaya_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="createList_CreateEmptyList_SizeIsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Task1_Tests.pushFront_pushToEmptyList_SizeEqualsOne">
     <configuration name="Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
       <option name="METHOD_NAME" value="getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task1_Tests.get_getElementByIndexEqualsSize_ThrowsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="126_Dybovskaya_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="get_getElementByIndexEqualsSize_ThrowsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -99,13 +77,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task1_Tests.pushBack_pushToEmptyList_SizeEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushBack_pushToEmptyList_SizeEqualsOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.pushFront_pushToEmptyList_SizeEqualsOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="pushFront_pushToEmptyList_SizeEqualsOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
-        <item itemvalue="JUnit.Task1_Tests.get_getElementByIndexEqualsSize_ThrowsException" />
-        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_NumberCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.pushFront_pushToEmptyList_SizeEqualsOne" />
+        <item itemvalue="JUnit.Task1_Tests.pushBack_pushToEmptyList_SizeEqualsOne" />
         <item itemvalue="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.createList_CreateEmptyList_SizeIsEmpty" />
+        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_NumberCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
       </list>
     </recent_temporary>
   </component>
@@ -195,7 +193,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647892818220</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="tests no works get_getNumberByIndex_NumberCorrect and get_getNumberByIndexEqualsSize_IndexOutOfBoundsException">
+      <created>1647894040261</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647894040261</updated>
+    </task>
+    <task id="LOCAL-00013" summary="tests works get_getNumberByIndexEqualsSize_IndexOutOfBoundsException">
+      <created>1647894158647</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1647894158647</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +234,8 @@
     <MESSAGE value="test no works getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
     <MESSAGE value="test no works getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
     <MESSAGE value="test works getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
-    <option name="LAST_COMMIT_MESSAGE" value="test works getNextAndPrev_getDataOfNextAndPrevNumber_Correct" />
+    <MESSAGE value="tests no works get_getNumberByIndex_NumberCorrect and get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
+    <MESSAGE value="tests works get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests works get_getNumberByIndexEqualsSize_IndexOutOfBoundsException" />
   </component>
 </project>

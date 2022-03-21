@@ -149,6 +149,19 @@ public class Task1_Tests extends Assert {
         assertEquals(false,List.isEmpty());
     }
     @Test
+    public void pushBack_pushToEmptyList_SizeEqualsOne(){
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushBack(20);
+        assertEquals(1, list.getSize());
+    }
+    @Test
+    public void pushFront_pushToEmptyList_SizeEqualsOne(){
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(20);
+        assertEquals(1, list.getSize());
+    }
+
+    @Test
     public void getSize_GetSizeTwo_SizeCorrect(){
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
@@ -178,7 +191,7 @@ public class Task1_Tests extends Assert {
         assertEquals(100, num.getData().intValue());
     }
     @Test
-    public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){
+    public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){//24
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
         List.pushFront(200);
