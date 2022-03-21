@@ -19,3 +19,6 @@ DoubleLinkedList ||  ->  |
 DoubleLinkedList ||  ->  |
 DoubleLinkedList ||  ->  |
 DoubleLinkedList ||  ->  |
+
+Node |13| this.next = prev;  ->  this.next = next; | getNextAndPrev_getDataOfNextAndPrevNumber_Correct
+Node |14| this.prev = next;  ->  this.prev = prev; | getNextAndPrev_getDataOfNextAndPrevNumber_Correct
