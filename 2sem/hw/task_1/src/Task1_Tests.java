@@ -157,14 +157,17 @@ public class Task1_Tests extends Assert {
         List.pushFront(200);
         assertEquals(2, List.getSize());
     }
-
-
-
-
-
-
-
-
+    @Test
+    public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(100);
+        List.pushFront(200);
+        List.pushFront(300);
+        Node<Integer> head = (Node<Integer>) List.getHead();
+        Node<Integer> tail = (Node<Integer>) List.getTail();
+        assertEquals(300, head.getData().intValue());
+        assertEquals(100, tail.getData().intValue());
+    }
 }
 
 
