@@ -145,7 +145,7 @@ public class Task1_Tests extends Assert {
         assertEquals(true, List.isEmpty());
     }
     @Test
-    public void pushFront_PushFrontToEmptyList_EmptyIsFalse() {
+    public void pushFront_PushFrontToEmptyList_EmptyIsFalse() {//11
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
         assertEquals(false,List.isEmpty());
