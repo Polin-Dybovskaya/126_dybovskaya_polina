@@ -195,9 +195,18 @@ public class Task1_Tests extends Assert {
             assertTrue(true);
         }
     }
-
+    // GET не раб
     @Test
-    public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {
+    public void get_getNumberByIndex_GetCorrectNumber() {//ОН ИХ ЗЕРКАЛИТТТ
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushBack(10);
+        List.pushBack(20);
+        List.pushBack(30);
+        Node<Integer> num = (Node<Integer>) List.get(0);
+        assertEquals(10, num.getData().intValue());
+    }
+    @Test
+    public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {//!
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
         List.pushFront(200);
@@ -216,6 +225,16 @@ public class Task1_Tests extends Assert {
         assertEquals(100, head.getData().intValue());
         assertEquals(100, tail.getData().intValue());
         assertEquals(head, tail);
+    }
+    @Test
+    public void remove_removeElementFromListWithOneElement_SizeEqualsZero() {
+
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<Integer>();
+
+        Node<Integer> elem = (Node<Integer>) list.pushBack(10);
+        list.remove(elem);
+
+        assertEquals(0, list.getSize());
     }
 
 }
