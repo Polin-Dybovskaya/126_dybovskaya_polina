@@ -215,7 +215,7 @@ public class Task1_Tests extends Assert {
         assertEquals(20, num.getData().intValue());
     }
     @Test
-    public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {//!
+    public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushFront(100);
         List.pushFront(200);

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test no works: get_getNumberByIndex_GetCorrectNumber">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect">
+  <component name="RunManager" selected="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+    <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,41 +70,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.get_getNumberByIndex_NumberCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.get_getENumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="get_getNumberByIndex_NumberCorrect" />
+      <option name="METHOD_NAME" value="get_getENumberByIndex_GetCorrectNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.get_getNumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_pushThreeElements_HeadAndTailIsCorrect" />
+      <option name="METHOD_NAME" value="get_getNumberByIndex_GetCorrectNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.pushFront_pushToEmptyList_HeadAndTailIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.get_getSecondNumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task1_Tests.pushItems_PushFrontThreeItems_FirstItemIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="126_Dybovskaya_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="pushItems_PushFrontThreeItems_FirstItemIsCorrect" />
+      <option name="METHOD_NAME" value="get_getSecondNumberByIndex_GetCorrectNumber" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.pushFront_pushThreeElements_HeadAndTailIsCorrect" />
         <item itemvalue="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_NumberCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.pushItems_PushFrontThreeItems_FirstItemIsCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_GetCorrectNumber" />
+        <item itemvalue="JUnit.Task1_Tests" />
+        <item itemvalue="JUnit.Task1_Tests.get_getSecondNumberByIndex_GetCorrectNumber" />
+        <item itemvalue="JUnit.Task1_Tests.get_getENumberByIndex_GetCorrectNumber" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647896319059</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="test no works:">
+      <created>1647897749527</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1647897749527</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test no works: get_getNumberByIndex_GetCorrectNumber">
+      <created>1647951237787</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1647951237787</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -264,6 +277,8 @@
     <MESSAGE value="tests: pushFront_pushToEmptyList_SizeEqualsOne and pushBack_pushToEmptyList_SizeEqualsOne" />
     <MESSAGE value="test works: pushBack_pushToEmptyList_SizeEqualsOne" />
     <MESSAGE value="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
-    <option name="LAST_COMMIT_MESSAGE" value="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
+    <MESSAGE value="test no works:" />
+    <MESSAGE value="test no works: get_getNumberByIndex_GetCorrectNumber" />
+    <option name="LAST_COMMIT_MESSAGE" value="test no works: get_getNumberByIndex_GetCorrectNumber" />
   </component>
 </project>
