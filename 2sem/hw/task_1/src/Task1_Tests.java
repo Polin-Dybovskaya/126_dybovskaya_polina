@@ -197,13 +197,22 @@ public class Task1_Tests extends Assert {
     }
     // GET не раб
     @Test
-    public void get_getNumberByIndex_GetCorrectNumber() {//ОН ИХ ЗЕРКАЛИТТТ
+    public void get_getNumberByIndex_GetCorrectNumber() {//41 44 17 20
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(10);
+        List.pushFront(20);
+        List.pushFront(30);
+        Node<Integer> num = (Node<Integer>) List.get(0);
+        assertEquals(30, num.getData().intValue());
+    }
+    @Test
+    public void get_getSecondNumberByIndex_GetCorrectNumber() {//
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushBack(10);
         List.pushBack(20);
         List.pushBack(30);
-        Node<Integer> num = (Node<Integer>) List.get(0);
-        assertEquals(10, num.getData().intValue());
+        Node<Integer> num = (Node<Integer>) List.get(1);
+        assertEquals(20, num.getData().intValue());
     }
     @Test
     public void getHeadAndTail_GetNumbers_HeadAndTailCorrect() {//!

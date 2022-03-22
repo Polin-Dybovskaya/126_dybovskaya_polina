@@ -14,10 +14,10 @@ public class DoubleLinkedList<T> {
         return size;
     }
     public ListNode<T> getHead() {
-        return dummy.getNext();
+        return dummy.getNext();//MIST
     }
     public ListNode<T> getTail() {
-        return dummy.getPrev();
+        return dummy.getPrev();//MIST
     }
 
     public ListNode<T> get(int index) {
@@ -25,7 +25,7 @@ public class DoubleLinkedList<T> {
             throw new IndexOutOfBoundsException("index out of bounds");
         ListNode<T> cur = getHead();
         for(int i = 0; i < index; ++i)
-            cur = cur.getNext();
+            cur = cur.getPrev();
         return (Node<T>) cur;
     }
 
@@ -38,10 +38,10 @@ public class DoubleLinkedList<T> {
         return new Node<T>(data, node, node.getPrev());
     }
     public Node<T> pushFront(T data) {
-        return insertBefore(getTail(), data);
+        return insertBefore(getHead(), data);//MIST
     }
     public Node<T> pushBack(T data) {
-        return insertAfter(getHead(), data);
+        return insertAfter(getTail(), data);//MIST
     }
     public void remove(ListNode<T> node) {
         node.getPrev().setPrev(node.getNext());
