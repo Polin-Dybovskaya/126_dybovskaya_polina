@@ -1,26 +1,33 @@
+DynamicArray.java |11| size = 1; -> size = DefaultSize;                                | createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize
+DynamicArray.java |21| if(newSize > 0); -> if(newSize < 0);                            | resize_SizeNumber_NewSizeIsCorrect
+DynamicArray.java |27| newSize = size; -> size= newSize;                               | resize_SizeNumber_NewSizeIsCorrect
+DynamicArray.java |30| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToGetOut_GetIndexOutOfBoundsException
+DynamicArray.java |35| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToSetOut_GetIndexOutOfBoundsException
+DynamicArray.java |15| data = new Object[capacity]; -> data = new Object[size];        | setNumbers_SetTwoNumbers_NumbersCorrect
+DynamicArray.java |40| if(index < 0 || index > size) -> if(index < 0 || index >= size);| insert_NumbersWithIndexEqualsSize_ThrowsException
+DynamicArray.java |42| (capacity < size) -> if(capacity <= size)                       | insert_insertNumbers_NumbersCorrect
+DynamicArray.java |49| data[size] = value; -> data[index] = value; || index >= size);  | insert_insertNumbers_NumbersCorrect
+DynamicArray.java |52| if(capacity < size) -> if(capacity == size)                     | pushBack_pushBackNumber_NumberCorrect
+DynamicArray.java |56| data[capacity] = value; -> data[size] = value;                  | pushBack_pushBackNumber_NumberCorrect
+DynamicArray.java |60| if(size < 0) -> if(size == 0)                                   | popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException
+DynamicArray.java |66| if(index < 0 || index > size) -> if(index < 0 || index >= size) | remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException
 
-DynamicArray |11| size = 1; -> size = DefaultSize;                                | createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize
-DynamicArray |15| data = new Object[capacity]; -> data = new Object[size];        | setNumbers_SetTwoNumbers_NumbersCorrect
-DynamicArray |21| if(newSize > 0); -> if(newSize < 0);                            | resize_SizeNumber_NewSizeIsCorrect
-DynamicArray |27| newSize = size; -> size= newSize;                               | resize_SizeNumber_NewSizeIsCorrect
-DynamicArray |30| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToGetOut_GetIndexOutOfBoundsException
-DynamicArray |35| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToSetOut_GetIndexOutOfBoundsException
-DynamicArray |40| if(index < 0 || index > size) -> if(index < 0 || index >= size);| insert_NumbersWithIndexEqualsSize_ThrowsException
-DynamicArray |42| (capacity < size) -> if(capacity <= size)                       | insert_insertNumbers_NumbersCorrect
-DynamicArray |49| data[size] = value; -> data[index] = value; || index >= size);  | insert_insertNumbers_NumbersCorrect
-DynamicArray |52| if(capacity < size) -> if(capacity == size)                     | pushBack_pushBackNumber_NumberCorrect
-DynamicArray |56| data[capacity] = value; -> data[size] = value;                  | pushBack_pushBackNumber_NumberCorrect
-DynamicArray |60| if(size < 0) -> if(size == 0)                                   | popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException
-DynamicArray |66| if(index < 0 || index > size) -> if(index < 0 || index >= size) | remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException
+DoubleLinkedList.java|11| return dummy == dummy; -> return dummy == dummy.getNext();      | pushFront_PushFrontToEmptyList_EmptyIsFalse
+Node.java            |13| this.next = prev;  ->  this.next = next;                        | getNextAndPrev_getDataOfNextAndPrevNumber_Correct
+Node.java            |14| this.prev = next;  ->  this.prev = prev;                        | getNextAndPrev_getDataOfNextAndPrevNumber_Correct
+DoubleLinkedList.java|24| if(index < 0 || index > size) -> if(index < 0 || index >= size) | get_getNumberByIndexEqualsSize_IndexOutOfBoundsException
+DoubleLinkedList.java|33| --size; -> ++size;                                              | pushBack_pushToEmptyList_SizeEqualsOne
+DoubleLinkedList.java|17| return dummy.getPrev(); -> return dummy.getNext();              | get_getNumberByIndex_GetCorrectNumber # ошибки 17.20.41.44 друг друга покрывают
+DoubleLinkedList.java|20| return dummy.getNext(); -> return dummy.getPrev();              | get_getNumberByIndex_GetCorrectNumber
+DoubleLinkedList.java|41| return insertBefore(getTail(), data); -> return insertBefore(getHead(), data); | get_getNumberByIndex_GetCorrectNumber
+DoubleLinkedList.java|44| return insertAfter(getHead(), data); -> return insertAfter(getTail(), data);  | get_getNumberByIndex_GetCorrectNumber
+DoubleLinkedList.java|28| cur = cur.getPrev(); -> cur = cur.getNext();                    |get_getSecondNumberByIndex_GetCorrectNumber
+DoubleLinkedList.java|47| node.getPrev().setPrev(node.getNext()); -> node.getPrev().setNext(node.getNext()); |remove_removeNumbersFromList_CheckingNextAndPrev # ошибки 47 и 48 взаимосвязаны
+DoubleLinkedList.java|48| node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev()); |remove_removeNumbersFromList_CheckingNextAndPrev
+DoubleLinkedList.java|62| -> size+=list.getSize();  |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers # необходимо сразу обозначить увеличение размера иначе выдает index out of bounds
+DoubleLinkedList.java|55| list.getHead().setNext(node); -> list.getHead().setPrev(node); |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers # ошибки 55 и 56 взаимосвязаны
+DoubleLinkedList.java|56| list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext()); |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|74| -> size+=list.getSize(); |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers # анологично с 62 иначе выдает  index out of bounds
+DoubleLinkedList.java|67| list.getHead().setNext(node.getPrev()); -> list.getHead().setPrev(node.getPrev()); |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers  # ошибки 55 и 56 взаимосвязаны
+DoubleLinkedList.java|68| list.getTail().setPrev(node); -> list.getTail().setNext(node); |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
 
-DoubleLinkedList |11| return dummy == dummy; -> return dummy == dummy.getNext();      | pushFront_PushFrontToEmptyList_EmptyIsFalse
-DoubleLinkedList |24| if(index < 0 || index > size) -> if(index < 0 || index >= size) |get_getNumberByIndexEqualsSize_IndexOutOfBoundsException
-DoubleLinkedList |33| --size; -> ++size;                                              |pushBack_pushToEmptyList_SizeEqualsOne
-DoubleLinkedList |17|  ->  |
-DoubleLinkedList |20|  ->  |
-DoubleLinkedList |41|  ->  |
-DoubleLinkedList ||  ->  |
-DoubleLinkedList ||  ->  |
-
-Node |13| this.next = prev;  ->  this.next = next; | getNextAndPrev_getDataOfNextAndPrevNumber_Correct
-Node |14| this.prev = next;  ->  this.prev = prev; | getNextAndPrev_getDataOfNextAndPrevNumber_Correct

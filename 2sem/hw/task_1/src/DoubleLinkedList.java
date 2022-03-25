@@ -25,7 +25,7 @@ public class DoubleLinkedList<T> {
             throw new IndexOutOfBoundsException("index out of bounds");
         ListNode<T> cur = getHead();
         for(int i = 0; i < index; ++i)
-            cur = cur.getPrev();
+            cur = cur.getNext();
         return (Node<T>) cur;
     }
 
@@ -44,31 +44,33 @@ public class DoubleLinkedList<T> {
         return insertAfter(getTail(), data);//MIST
     }
     public void remove(ListNode<T> node) {
-        node.getPrev().setPrev(node.getNext());
-        node.getNext().setNext(node.getPrev());
+        node.getPrev().setNext(node.getNext());//mist
+        node.getNext().setPrev(node.getPrev());//mist
         size = Math.max(0, size - 1);
     }
 
     public void insertListAfter(ListNode<T> node, DoubleLinkedList<T> list) {
         if(list.isEmpty())
             return;
-        list.getHead().setNext(node);
-        list.getTail().setPrev(node.getNext());
+        list.getHead().setPrev(node);//mist
+        list.getTail().setNext(node.getNext());//mist
         node.getNext().setPrev(list.getTail());
         node.setNext(list.getHead());
 
         list.dummy.setNext(list.dummy);
         list.dummy.setPrev(list.dummy);
+        size += list.getSize();//mist
     }
     public void insertListBefore(ListNode<T> node, DoubleLinkedList<T> list) {
         if(list.isEmpty())
             return;
-        list.getHead().setNext(node.getPrev());
-        list.getTail().setPrev(node);
+        list.getHead().setPrev(node.getPrev());//mist
+        list.getTail().setNext(node);//mist
         node.getPrev().setNext(list.getHead());
         node.setPrev(list.getTail());
 
         list.dummy.setNext(list.dummy);
         list.dummy.setPrev(list.dummy);
+        size+=list.getSize();//mist
     }
 }

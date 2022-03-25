@@ -59,7 +59,7 @@ public class Task1_Tests extends Assert {
         assertEquals(200, array.get(1).intValue());
     }
     @Test//42
-    public void insert_NumbersWithIndexEqualsSize_ThrowsException(){
+    public void insert_NumbersWithIndexEqualsSize_ThrowsException(){//40
         DynamicArray<Integer> array = new DynamicArray<>(5);
         try {
             array.insert(5, 6);
@@ -69,7 +69,7 @@ public class Task1_Tests extends Assert {
         }
     }
     @Test// 42 49
-    public void insert_insertNumbers_NumbersCorrect(){
+    public void insert_insertNumbers_NumbersCorrect(){//42 49
         DynamicArray<Integer> array = new DynamicArray<>(1000);
         array.set(0, 100);
         array.set(1, 200);
@@ -149,26 +149,6 @@ public class Task1_Tests extends Assert {
         assertEquals(false,List.isEmpty());
     }
     @Test
-    public void pushBack_pushToEmptyList_SizeEqualsOne(){//33
-        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushBack(20);
-        assertEquals(1, list.getSize());
-    }
-    @Test
-    public void pushFront_pushToEmptyList_SizeEqualsOne(){
-        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
-        list.pushFront(20);
-        assertEquals(1, list.getSize());
-    }
-
-    @Test
-    public void getSize_GetSizeTwo_SizeCorrect(){
-        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
-        List.pushFront(100);
-        List.pushFront(200);
-        assertEquals(2, List.getSize());
-    }
-    @Test
     public void getNextAndPrev_getDataOfNextAndPrevNumber_Correct(){//node13-14
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
 
@@ -182,7 +162,26 @@ public class Task1_Tests extends Assert {
         assertEquals(100, next.getData().intValue());
         assertEquals(300, prev.getData().intValue());
     }
+    @Test
+    public void getSize_GetSizeTwo_SizeCorrect() {
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(100);
+        List.pushFront(200);
+        assertEquals(2, List.getSize());
+    }
+    @Test
+    public void pushBack_pushToEmptyList_SizeEqualsOne(){//33
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushBack(20);
+        assertEquals(1, list.getSize());
+    }
+    @Test
+    public void pushFront_pushToEmptyList_SizeEqualsOne(){
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(20);
+        assertEquals(1, list.getSize());
 
+    }
     @Test
     public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){//24
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
@@ -195,7 +194,7 @@ public class Task1_Tests extends Assert {
             assertTrue(true);
         }
     }
-    // GET не раб
+
     @Test
     public void get_getNumberByIndex_GetCorrectNumber() {//41 44 17 20
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
@@ -206,7 +205,7 @@ public class Task1_Tests extends Assert {
         assertEquals(30, num.getData().intValue());
     }
     @Test
-    public void get_getSecondNumberByIndex_GetCorrectNumber() {//
+    public void get_getSecondNumberByIndex_GetCorrectNumber() {//28
         DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
         List.pushBack(10);
         List.pushBack(20);
@@ -235,15 +234,100 @@ public class Task1_Tests extends Assert {
         assertEquals(100, tail.getData().intValue());
         assertEquals(head, tail);
     }
+
     @Test
-    public void remove_removeElementFromListWithOneElement_SizeEqualsZero() {
-
+    public void remove_removeNumbersFromList_CheckingNextAndPrev(){//47 48
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        Node<Integer> num2 = (Node<Integer>) list.pushBack(500);
+        Node<Integer> prev = (Node<Integer>) list.insertBefore(num2, 400);
+        Node<Integer> next = (Node<Integer>) list.insertAfter(num2, 600);
+        list.remove(num2);
+        Node<Integer> num3 = (Node<Integer>) next.getPrev();
+        Node<Integer> num1 = (Node<Integer>) prev.getNext();
+        assertEquals(600, num1.getData().intValue());
+        assertEquals(400, num3.getData().intValue());
+    }
+    @Test
+    public void remove_RemoveFirstNumber_SizeIsCorrect() {
+        DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
+        list.pushFront(100);
+        list.pushFront(200);
+        list.pushFront(300);
+        list.remove(list.get(0));
+        assertEquals(2, list.getSize());
+    }
+    @Test
+    public void remove_removeNumberFromListWithOneElement_SizeEqualsZero() {
         DoubleLinkedList<Integer> list = new DoubleLinkedList<Integer>();
-
-        Node<Integer> elem = (Node<Integer>) list.pushBack(10);
-        list.remove(elem);
-
+        Node<Integer> num = (Node<Integer>) list.pushBack(10);
+        list.remove(num);
         assertEquals(0, list.getSize());
+    }
+    @Test
+    public void insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers(){//55 56 62
+
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+
+        list1.pushBack(10);
+        list1.pushBack(20);
+        list1.pushBack(30);
+        list1.pushBack(40);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushBack(50);
+        list2.pushBack(60);
+        list2.pushBack(70);
+
+        list1.insertListAfter(list1.get(3), list2);
+
+        Node<Integer> zero = (Node<Integer>) list1.get(0);
+        Node<Integer> one = (Node<Integer>) list1.get(1);
+        Node<Integer> two = (Node<Integer>) list1.get(2);
+        Node<Integer> three = (Node<Integer>) list1.get(3);
+        Node<Integer> four = (Node<Integer>) list1.get(4);
+        Node<Integer> five = (Node<Integer>) list1.get(5);
+        Node<Integer> six = (Node<Integer>) list1.get(6);
+
+        assertEquals(10, zero.getData().intValue());
+        assertEquals(20, one.getData().intValue());
+        assertEquals(30, two.getData().intValue());
+        assertEquals(40, three.getData().intValue());
+        assertEquals(50, four.getData().intValue());
+        assertEquals(60, five.getData().intValue());
+        assertEquals(70, six.getData().intValue());
+    }
+    @Test
+    public void insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers(){//55 56 62
+
+        DoubleLinkedList<Integer> list1 = new DoubleLinkedList<>();
+
+        list1.pushBack(40);
+        list1.pushBack(50);
+        list1.pushBack(60);
+        list1.pushBack(70);
+
+        DoubleLinkedList<Integer> list2 = new DoubleLinkedList<>();
+        list2.pushBack(10);
+        list2.pushBack(20);
+        list2.pushBack(30);
+
+        list1.insertListBefore(list1.get(0), list2);
+
+        Node<Integer> zero = (Node<Integer>) list1.get(0);
+        Node<Integer> one = (Node<Integer>) list1.get(1);
+        Node<Integer> two = (Node<Integer>) list1.get(2);
+        Node<Integer> three = (Node<Integer>) list1.get(3);
+        Node<Integer> four = (Node<Integer>) list1.get(4);
+        Node<Integer> five = (Node<Integer>) list1.get(5);
+        Node<Integer> six = (Node<Integer>) list1.get(6);
+
+        assertEquals(10, zero.getData().intValue());
+        assertEquals(20, one.getData().intValue());
+        assertEquals(30, two.getData().intValue());
+        assertEquals(40, three.getData().intValue());
+        assertEquals(50, four.getData().intValue());
+        assertEquals(60, five.getData().intValue());
+        assertEquals(70, six.getData().intValue());
     }
 
 }

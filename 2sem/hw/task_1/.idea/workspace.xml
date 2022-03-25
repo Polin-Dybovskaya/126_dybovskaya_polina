@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="test no works: get_getNumberByIndex_GetCorrectNumber">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Node.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
@@ -50,7 +49,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+  <component name="RunManager" selected="JUnit.Task1_Tests">
     <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -60,41 +59,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
+      <option name="METHOD_NAME" value="insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.get_getENumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="get_getENumberByIndex_GetCorrectNumber" />
+      <option name="METHOD_NAME" value="insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.get_getNumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.remove_RemoveFirstNumber_SizeIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="get_getNumberByIndex_GetCorrectNumber" />
+      <option name="METHOD_NAME" value="remove_RemoveFirstNumber_SizeIsCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.get_getSecondNumberByIndex_GetCorrectNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.remove_removeNumberFromListWithOneElement_SizeEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="get_getSecondNumberByIndex_GetCorrectNumber" />
+      <option name="METHOD_NAME" value="remove_removeNumberFromListWithOneElement_SizeEqualsZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests.getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.get_getNumberByIndex_GetCorrectNumber" />
         <item itemvalue="JUnit.Task1_Tests" />
-        <item itemvalue="JUnit.Task1_Tests.get_getSecondNumberByIndex_GetCorrectNumber" />
-        <item itemvalue="JUnit.Task1_Tests.get_getENumberByIndex_GetCorrectNumber" />
+        <item itemvalue="JUnit.Task1_Tests.insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" />
+        <item itemvalue="JUnit.Task1_Tests.insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" />
+        <item itemvalue="JUnit.Task1_Tests.remove_removeNumberFromListWithOneElement_SizeEqualsZero" />
+        <item itemvalue="JUnit.Task1_Tests.remove_RemoveFirstNumber_SizeIsCorrect" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +244,21 @@
       <option name="project" value="LOCAL" />
       <updated>1647951237787</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="TEST WORKS get_getNumberByIndex_GetCorrectNumber">
+      <created>1647951977592</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1647951977592</updated>
+    </task>
+    <task id="LOCAL-00020" summary="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+      <created>1647952086600</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1647952086600</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +292,8 @@
     <MESSAGE value="test works: pushFront_pushToEmptyList_HeadAndTailIsCorrect" />
     <MESSAGE value="test no works:" />
     <MESSAGE value="test no works: get_getNumberByIndex_GetCorrectNumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="test no works: get_getNumberByIndex_GetCorrectNumber" />
+    <MESSAGE value="TEST WORKS get_getNumberByIndex_GetCorrectNumber" />
+    <MESSAGE value="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
+    <option name="LAST_COMMIT_MESSAGE" value="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
   </component>
 </project>
