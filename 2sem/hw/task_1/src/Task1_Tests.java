@@ -1,4 +1,5 @@
 import org.junit.*;
+import org.junit.Assert;
 
 public class Task1_Tests extends Assert {
 

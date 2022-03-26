@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="task1.">
+      <change afterPath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoubleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoubleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../1sem/task_10/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -258,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647952086600</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="task1.">
+      <created>1648238160881</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1648238160881</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -294,6 +298,7 @@
     <MESSAGE value="test no works: get_getNumberByIndex_GetCorrectNumber" />
     <MESSAGE value="TEST WORKS get_getNumberByIndex_GetCorrectNumber" />
     <MESSAGE value="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
-    <option name="LAST_COMMIT_MESSAGE" value="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
+    <MESSAGE value="task1." />
+    <option name="LAST_COMMIT_MESSAGE" value="task1." />
   </component>
 </project>
