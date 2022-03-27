@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="task1.">
-      <change afterPath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../task_3/task_3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/task_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/task_2.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
