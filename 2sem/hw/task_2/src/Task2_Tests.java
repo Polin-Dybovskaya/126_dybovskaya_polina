@@ -45,13 +45,6 @@ public class Task2_Tests extends Assert {
         assertArrayEquals(new Integer[]{1,1,1}, data);
     }
     @Test
-    public void InsertionSort_SortNotNeed_NumbersOnRightPositions(){//WORK
-        Integer[] data = {1,2,3,4,5};
-        InsertionSort<Integer> is = new InsertionSort<>();
-        is.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
-    }
-    @Test
     public void InsertionSort_sortDats_SortCorrect(){//8
         Integer[] data = {2,3,5,4,1};
         InsertionSort<Integer> is = new InsertionSort<>();
@@ -85,13 +78,6 @@ public class Task2_Tests extends Assert {
     @Test
     public void SelectionSort_sortDats_SortCorrect(){//8
         Integer[] data = {2,3,5,4,1};
-        SelectionSort<Integer>ss= new SelectionSort<>();
-        ss.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
-    }
-    @Test
-    public void SelectionSort_SortNotNeed_NumbersOnRightPositions(){//
-        Integer[] data = {1,2,3,4,5};
         SelectionSort<Integer>ss= new SelectionSort<>();
         ss.sort(data,new TestComparator());
         assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
