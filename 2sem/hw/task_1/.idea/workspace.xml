@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="task1.">
-      <change afterPath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../task_3/task_3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/126_Dybovskaya_task_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/Task2_Tests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/task_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/task_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,51 +48,52 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests">
-    <configuration name="Task1_Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException">
+    <configuration name="Task1_Tests.insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task1_Tests.insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="126_Dybovskaya_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" />
+      <option name="METHOD_NAME" value="insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.insert_insertNumbers_NumbersCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" />
+      <option name="METHOD_NAME" value="insert_insertNumbers_NumbersCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.remove_RemoveFirstNumber_SizeIsCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="remove_RemoveFirstNumber_SizeIsCorrect" />
+      <option name="METHOD_NAME" value="popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task1_Tests.remove_removeNumberFromListWithOneElement_SizeEqualsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task1_Tests.pushBack_pushBackNumber_NumberCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="remove_removeNumberFromListWithOneElement_SizeEqualsZero" />
+      <option name="METHOD_NAME" value="pushBack_pushBackNumber_NumberCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,11 +101,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Task1_Tests" />
-        <item itemvalue="JUnit.Task1_Tests.insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers" />
-        <item itemvalue="JUnit.Task1_Tests.insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers" />
-        <item itemvalue="JUnit.Task1_Tests.remove_removeNumberFromListWithOneElement_SizeEqualsZero" />
-        <item itemvalue="JUnit.Task1_Tests.remove_RemoveFirstNumber_SizeIsCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" />
+        <item itemvalue="JUnit.Task1_Tests.popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" />
+        <item itemvalue="JUnit.Task1_Tests.pushBack_pushBackNumber_NumberCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.insert_insertNumbers_NumbersCorrect" />
+        <item itemvalue="JUnit.Task1_Tests.insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" />
       </list>
     </recent_temporary>
   </component>

@@ -4,7 +4,7 @@ DynamicArray.java |27| newSize = size; -> size= newSize;                        
 DynamicArray.java |30| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToGetOut_GetIndexOutOfBoundsException
 DynamicArray.java |35| if(index < 0 || index > size);-> if(index < 0 || index >= size);| createArray_TryToSetOut_GetIndexOutOfBoundsException
 DynamicArray.java |15| data = new Object[capacity]; -> data = new Object[size];        | setNumbers_SetTwoNumbers_NumbersCorrect
-DynamicArray.java |40| if(index < 0 || index > size) -> if(index < 0 || index >= size);| insert_NumbersWithIndexEqualsSize_ThrowsException
+DynamicArray.java |40| if(index < 0 || index > size) -> if(index < 0 || index >= size);| insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException
 DynamicArray.java |42| (capacity < size) -> if(capacity <= size)                       | insert_insertNumbers_NumbersCorrect
 DynamicArray.java |49| data[size] = value; -> data[index] = value; || index >= size);  | insert_insertNumbers_NumbersCorrect
 DynamicArray.java |52| if(capacity < size) -> if(capacity == size)                     | pushBack_pushBackNumber_NumberCorrect

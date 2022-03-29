@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="95d47589-214f-4265-a990-c7a33034c1c3" name="Changes" comment="task3">
+    <list default="true" id="95d47589-214f-4265-a990-c7a33034c1c3" name="Changes" comment="task_3">
+      <change beforePath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_3/MergeSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_3/MergeSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/task_3/Task3_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_3/Task3_Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task3_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task3_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +37,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_1" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -121,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648502228892</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="task_3">
+      <created>1648503640396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648503640396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task3" />
-    <option name="LAST_COMMIT_MESSAGE" value="task3" />
+    <MESSAGE value="task_3" />
+    <option name="LAST_COMMIT_MESSAGE" value="task_3" />
   </component>
 </project>
