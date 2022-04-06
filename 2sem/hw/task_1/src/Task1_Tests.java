@@ -181,6 +181,18 @@ public class Task1_Tests extends Assert {
         assertEquals(2, List.getSize());
     }
     @Test
+    public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){//24
+        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
+        List.pushFront(100);
+        List.pushFront(200);
+        try {
+            List.get(2);
+            fail();
+        } catch (IndexOutOfBoundsException e) {
+            assertTrue(true);
+        }
+    }
+    @Test
     public void pushBack_pushToEmptyList_SizeEqualsOne(){//33
         DoubleLinkedList<Integer> list = new DoubleLinkedList<>();
         list.pushBack(20);
@@ -193,18 +205,7 @@ public class Task1_Tests extends Assert {
         assertEquals(1, list.getSize());
 
     }
-    @Test
-    public void get_getNumberByIndexEqualsSize_IndexOutOfBoundsException(){//24
-        DoubleLinkedList<Integer> List = new DoubleLinkedList<>();
-        List.pushFront(100);
-        List.pushFront(200);
-        try {
-            List.get(2);
-            fail();
-        } catch (IndexOutOfBoundsException e) {
-            assertTrue(true);
-        }
-    }
+
 
     @Test
     public void get_getNumberByIndex_GetCorrectNumber() {//41 44 17 20

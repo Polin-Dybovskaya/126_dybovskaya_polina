@@ -21,13 +21,13 @@ DoubleLinkedList.java|17| return dummy.getPrev(); -> return dummy.getNext();    
 DoubleLinkedList.java|20| return dummy.getNext(); -> return dummy.getPrev();              | get_getNumberByIndex_GetCorrectNumber
 DoubleLinkedList.java|41| return insertBefore(getTail(), data); -> return insertBefore(getHead(), data);     | get_getNumberByIndex_GetCorrectNumber
 DoubleLinkedList.java|44| return insertAfter(getHead(), data); -> return insertAfter(getTail(), data);       | get_getNumberByIndex_GetCorrectNumber
-DoubleLinkedList.java|28| cur = cur.getPrev(); -> cur = cur.getNext();                                       |get_getSecondNumberByIndex_GetCorrectNumber
-DoubleLinkedList.java|47| node.getPrev().setPrev(node.getNext()); -> node.getPrev().setNext(node.getNext()); |remove_removeNumbersFromList_CheckingNextAndPrev
-DoubleLinkedList.java|48| node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev()); |remove_removeNumbersFromList_CheckingNextAndPrev
-DoubleLinkedList.java|62| -> size+=list.getSize();                                                           |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
-DoubleLinkedList.java|55| list.getHead().setNext(node); -> list.getHead().setPrev(node);                     |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
-DoubleLinkedList.java|56| list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext()); |insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
-DoubleLinkedList.java|74| -> size+=list.getSize();                                                           |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
-DoubleLinkedList.java|67| list.getHead().setNext(node.getPrev()); -> list.getHead().setPrev(node.getPrev()); |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
-DoubleLinkedList.java|68| list.getTail().setPrev(node); -> list.getTail().setNext(node);                     |insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|28| cur = cur.getPrev(); -> cur = cur.getNext();                                       | get_getSecondNumberByIndex_GetCorrectNumber
+DoubleLinkedList.java|47| node.getPrev().setPrev(node.getNext()); -> node.getPrev().setNext(node.getNext()); | remove_removeNumbersFromList_CheckingNextAndPrev
+DoubleLinkedList.java|48| node.getNext().setNext(node.getPrev()); -> node.getNext().setPrev(node.getPrev()); | remove_removeNumbersFromList_CheckingNextAndPrev
+DoubleLinkedList.java|62| -> size+=list.getSize();                                                           | insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|55| list.getHead().setNext(node); -> list.getHead().setPrev(node);                     | insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|56| list.getTail().setPrev(node.getNext()); -> list.getTail().setNext(node.getNext()); | insertListAfter_insertListAfterFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|74| -> size+=list.getSize();                                                           | insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|67| list.getHead().setNext(node.getPrev()); -> list.getHead().setPrev(node.getPrev()); | insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
+DoubleLinkedList.java|68| list.getTail().setPrev(node); -> list.getTail().setNext(node);                     | insertListBefore_insertListBeforeFirstList_CheckingOrderOfNumbers
 
