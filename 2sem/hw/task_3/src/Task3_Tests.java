@@ -23,26 +23,13 @@ public class Task3_Tests extends Assert {
         assertArrayEquals(new Integer[]{3, 5}, arr);
     }
     @Test
-    public void QuickSort_sortArrayDifNumbers_SortCorrect(){// w
-        Integer[] arr = {2,3,5,4,1};
-        QuickSort<Integer> qs = new QuickSort();
-        qs.sort(arr, new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, arr);
-    }
-    @Test
     public void QuickSort_sortArrayWithSameNumbers_SortCorrect(){//25 29
         Integer[] arr = {2,4,1,3,1};
         QuickSort<Integer> qs = new QuickSort();
         qs.sort(arr, new TestComparator());
         assertArrayEquals(new Integer[]{1,1,2,3,4}, arr);
     }
-    @Test
-    public void QuickSort_SortNotNeed_NumbersOnRightPositions(){//тест на всякий случай к первому
-        Integer[] arr = {1,2,3,4,5};
-        QuickSort<Integer>bs= new QuickSort<>();
-        bs.sort(arr,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, arr);
-    }
+
     //..........HeapSort...............
     @Test
     public void HeapSort_SortNotNeed_SortCorrect(){//10

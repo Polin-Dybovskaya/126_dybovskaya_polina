@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d47589-214f-4265-a990-c7a33034c1c3" name="Changes" comment="task_3">
-      <change beforePath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_1/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/src/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_3/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_3/QuickSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/task_3/Task3_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/task_3/Task3_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task3_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task3_Tests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +40,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -52,26 +55,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.MergeSort_sortArrayDifNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="MergeSort_sortArrayDifNumbers_SortCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task3_Tests.MergeSort_sortArrayWithTwoNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="task_3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="MergeSort_sortArrayWithTwoNumbers_SortCorrect" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Task3_Tests.MergeSort_sortTwoNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_3" />
       <option name="PACKAGE_NAME" value="" />
@@ -82,11 +65,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task3_Tests.mergeSort_UnsortedOnlyFirstTwoElements_GetSortedArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3_Tests.QuickSort_sortArrayDifNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="task_3" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
-      <option name="METHOD_NAME" value="mergeSort_UnsortedOnlyFirstTwoElements_GetSortedArray" />
+      <option name="METHOD_NAME" value="QuickSort_sortArrayDifNumbers_SortCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.QuickSort_sortArrayWithSameNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="QuickSort_sortArrayWithSameNumbers_SortCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task3_Tests.quickSort_sortArrayWithTwoNumbers_SortCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="task_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task3_Tests" />
+      <option name="METHOD_NAME" value="quickSort_sortArrayWithTwoNumbers_SortCorrect" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,10 +98,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Task3_Tests" />
+        <item itemvalue="JUnit.Task3_Tests.QuickSort_sortArrayWithSameNumbers_SortCorrect" />
+        <item itemvalue="JUnit.Task3_Tests.QuickSort_sortArrayDifNumbers_SortCorrect" />
+        <item itemvalue="JUnit.Task3_Tests.quickSort_sortArrayWithTwoNumbers_SortCorrect" />
         <item itemvalue="JUnit.Task3_Tests.MergeSort_sortTwoNumbers_SortCorrect" />
-        <item itemvalue="JUnit.Task3_Tests.mergeSort_UnsortedOnlyFirstTwoElements_GetSortedArray" />
-        <item itemvalue="JUnit.Task3_Tests.MergeSort_sortArrayDifNumbers_SortCorrect" />
-        <item itemvalue="JUnit.Task3_Tests.MergeSort_sortArrayWithTwoNumbers_SortCorrect" />
       </list>
     </recent_temporary>
   </component>
