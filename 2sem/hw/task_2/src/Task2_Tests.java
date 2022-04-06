@@ -52,7 +52,7 @@ public class Task2_Tests extends Assert {
         assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
     }
 
-    //.................SelectionSort.java...................
+    //.................SelectionSort.java....................
     @Test
     public void SelectionSort_SortNotNeed_SortCorrect(){//work
         Integer[] data = {1,1,1};
