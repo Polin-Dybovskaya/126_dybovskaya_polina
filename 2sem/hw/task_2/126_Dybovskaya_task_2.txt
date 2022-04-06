@@ -1,14 +1,14 @@
 
-BubbleSort.java |5| for(int i = 0; i < data.length - sps; ++i) { -> for(int i = 1; i < data.length - sps; ++i) {                 |BubbleSort_SortNotNeed_SortCorrect
-BubbleSort.java |6| if(comparator.compare(data[i - 1], data[i]) < 0) { -> if(comparator.compare(data[i - 1], data[i]) > 0) {     |BubbleSort_SortNotNeedNumbersRightPositions_SortCorrect
-BubbleSort.java |4| for(int sps = 1; sps < data.length - 1; ++sps) {-> for(int sps = 0; sps < data.length - 1; ++sps) {          |BubbleSort_sortDats_SortCorrect
+BubbleSort.java |5| for(int i = 0; i < data.length - sps; ++i) { -> for(int i = 1; i < data.length - sps; ++i) {             |BubbleSort_SortNotNeed_SortCorrect
+BubbleSort.java |6| if(comparator.compare(data[i - 1], data[i]) < 0) { -> if(comparator.compare(data[i - 1], data[i]) > 0) { |BubbleSort_SortNotNeed_NumbersOnRightPositions
+BubbleSort.java |4| for(int sps = 1; sps < data.length - 1; ++sps) { -> for(int sps = 0; sps < data.length - 1; ++sps) {     |BubbleSort_sortDats_SortCorrect
 
 InsertionSort.java |6| while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) <= 0){ -> while (cur > 0 && comparator.compare(data[cur - 1], data[cur]) > 0){|InsertionSort_SortNotNeed_SortCorrect
 InsertionSort.java |8| ++cur; -> --cur;                                                                                                                             |InsertionSort_sortDats_SortCorrect
 
-SelectionSort.java |5| int maxInd = 1;-> int maxInd = 0; |SelectionSort_SortDats_SortOk
+SelectionSort.java |5| int maxInd = 1; -> int maxInd = 0;                                                                                                             | SelectionSort_SortDats_SortOk
 SelectionSort.java |4| for(int sortedSize = 1; sortedSize < data.length - 1; ++sortedSize) { -> for(int sortedSize = 0; sortedSize < data.length - 1; ++sortedSize) { | SelectionSort_sortTwoNumbers_SortCorrect
-SelectionSort.java |10| T tmp = data[data.length-sortedSize]; -> T tmp = data[data.length - 1-sortedSize];                                                            | SelectionSort_sortTwoNumbers_SortCorrect
+SelectionSort.java |10| T tmp = data[data.length - sortedSize]; -> T tmp = data[data.length - 1-sortedSize];                                                          | SelectionSort_sortTwoNumbers_SortCorrect
 SelectionSort.java |11| data[data.length - sortedSize] = data[maxInd]; -> data[data.length -1- sortedSize] = data[maxInd];                                            | SelectionSort_sortTwoNumbers_SortCorrect
-SelectionSort.java |8| maxInd = sortedSize; -> maxInd = i;                                                              | SelectionSort_sortDats_SortCorrect
+SelectionSort.java |8|  maxInd = sortedSize; -> maxInd = i;                                                                                                           | SelectionSort_sortDats_SortCorrect
 
