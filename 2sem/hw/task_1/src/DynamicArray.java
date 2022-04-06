@@ -12,7 +12,7 @@ public class DynamicArray<T> {
         capacity = DefaultSize;
     }
     public DynamicArray(int size) {
-        data = new Object[size];
+        data = new Object[size]; //
         this.size = size;
         capacity = size;
     }
@@ -24,7 +24,7 @@ public class DynamicArray<T> {
             capacity = newSize;
             data = Arrays.copyOf(data, newSize);
         }
-        size = newSize;//
+        size= newSize;//
     }
     public T get(int index) {
         if(index < 0 || index >= size)//
@@ -39,7 +39,7 @@ public class DynamicArray<T> {
     public void insert(int index, T value) {
         if(index < 0 || index >= size)//
             throw new IndexOutOfBoundsException("Index out of bounds");
-        if(capacity == size) {//
+        if(capacity <= size) {//
             data = Arrays.copyOf(data, size * 2);
             capacity = size * 2;
         }
@@ -49,7 +49,7 @@ public class DynamicArray<T> {
         data[index] = value;//
     }
     public void pushBack(T value) {
-        if(capacity == size) {//
+        if(capacity == size) { //
             data = Arrays.copyOf(data, size * 2);
             capacity = size * 2;
         }
@@ -57,7 +57,7 @@ public class DynamicArray<T> {
         ++size;
     }
     public void popBack() {
-        if(size == 0)//
+        if(size == 0)  //
             throw new UnsupportedOperationException("Array is empty");
         --size;
         data[size] = null;

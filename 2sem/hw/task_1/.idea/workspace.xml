@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="task1.">
+    <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="correct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/126_Dybovskaya_task_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/DynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Task1_Tests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task1_Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/out/production/task_2/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/out/production/task_2/SelectionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/out/production/task_2/Task2_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/out/production/task_2/Task2_Tests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_2/src/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,22 +50,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task_2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException">
-    <configuration name="Task1_Tests.insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="126_Dybovskaya_task_1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
-      <option name="METHOD_NAME" value="insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Task1_Tests.remove_RemoveOneNumber_NumberCorrect">
     <configuration name="Task1_Tests.insert_insertNumbers_NumbersCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="126_Dybovskaya_task_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -99,13 +96,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Task1_Tests.remove_RemoveOneNumber_NumberCorrect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="126_Dybovskaya_task_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Task1_Tests" />
+      <option name="METHOD_NAME" value="remove_RemoveOneNumber_NumberCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Task1_Tests.remove_RemoveOneNumber_NumberCorrect" />
         <item itemvalue="JUnit.Task1_Tests.remove_RemoveIndexOutOfBounds_GetIndexOutOfBoundsException" />
         <item itemvalue="JUnit.Task1_Tests.popBack_popBackNumberFromEmptyArray_GetUnsupportedOperationException" />
         <item itemvalue="JUnit.Task1_Tests.pushBack_pushBackNumber_NumberCorrect" />
         <item itemvalue="JUnit.Task1_Tests.insert_insertNumbers_NumbersCorrect" />
-        <item itemvalue="JUnit.Task1_Tests.insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648238160881</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="correct">
+      <created>1648580160283</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1648580160283</updated>
+    </task>
+    <task id="LOCAL-00023" summary="correct">
+      <created>1649239871803</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1649239871803</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +323,7 @@
     <MESSAGE value="TEST WORKS get_getNumberByIndex_GetCorrectNumber" />
     <MESSAGE value="тест работает getHeadAndTail_GetNumbers_HeadAndTailCorrect" />
     <MESSAGE value="task1." />
-    <option name="LAST_COMMIT_MESSAGE" value="task1." />
+    <MESSAGE value="correct" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct" />
   </component>
 </project>

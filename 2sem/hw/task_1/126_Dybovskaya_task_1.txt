@@ -1,11 +1,11 @@
 DynamicArray.java |11| size = 1; -> size = DefaultSize;                                | createArray_CreateArrayWithoutSize_SizeEqualsDefaultSize
-DynamicArray.java |21| if(newSize > 0) -> if(newSize < 0)                              | resize_SizeNumber_NewSizeIsCorrect
-DynamicArray.java |27| newSize = size; -> size= newSize;                               | resize_SizeNumber_NewSizeIsCorrect
-DynamicArray.java |30| if(index < 0 || index > size); -> if(index < 0 || index >= size);| createArray_TryToGetOut_GetIndexOutOfBoundsException
-DynamicArray.java |35| if(index < 0 || index > size); -> if(index < 0 || index >= size);| createArray_TryToSetOut_GetIndexOutOfBoundsException
+DynamicArray.java |21| if(newSize > 0) -> if(newSize < 0)                              | resize_SizeNumber_NewSizeCorrect
+DynamicArray.java |27| newSize = size; -> size= newSize;                               | resize_SizeNumber_NewSizeCorrect
+DynamicArray.java |30| if(index < 0 || index > size) -> if(index < 0 || index >= size) | createArray_GetOutOfBounds_GetIndexOutOfBoundsException
+DynamicArray.java |35| if(index < 0 || index > size) -> if(index < 0 || index >= size) | createArray_SetOutOfBounds_GetIndexOutOfBoundsException
 DynamicArray.java |15| data = new Object[capacity]; -> data = new Object[size];        | setNumbers_SetTwoNumbers_NumbersCorrect
-DynamicArray.java |40| if(index < 0 || index > size) -> if(index < 0 || index >= size)| insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException
-DynamicArray.java |42| (capacity < size) { -> if(capacity <= size) {                    | insert_insertNumbers_NumbersCorrect
+DynamicArray.java |40| if(index < 0 || index > size) -> if(index < 0 || index >= size) | insert_TryToInsertValueOutOfRange_GettingIndexOutOfBoundsException
+DynamicArray.java |42| if(capacity < size) { -> if(capacity <= size) {                 | insert_insertNumbers_NumbersCorrect
 DynamicArray.java |49| data[size] = value; -> data[index] = value;                     | insert_insertNumbers_NumbersCorrect
 DynamicArray.java |52| if(capacity < size) { -> if(capacity == size) {                 | pushBack_pushBackNumber_NumberCorrect
 DynamicArray.java |56| data[capacity] = value; -> data[size] = value;                  | pushBack_pushBackNumber_NumberCorrect
