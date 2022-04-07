@@ -1,85 +1,89 @@
+import org.junit.Assert;
 import org.junit.*;
 
-public class Task2_Tests extends Assert {
-    //.................BubbleSort.java...................
+public class Task2_Tests extends Assert{
     class TestComparator implements MyComparator<Integer>{
         @Override
         public int compare(Integer first, Integer second) {
             return first - second;
         }
     }
-    @Test
-    public void BubbleSort_SortNotNeed_SortCorrect(){//5
-        Integer[] data = {1,1,1};
-        BubbleSort<Integer>bs= new BubbleSort<>();
-        bs.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,1,1}, data);
-    }
-    @Test
-    public void BubbleSort_SortNotNeed_NumbersOnRightPositions(){//6
-        Integer[] data = {1,2,3,4,5};
-        BubbleSort<Integer>bs= new BubbleSort<>();
-        bs.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
-    }
-    @Test
-    public void BubbleSort_sortDats_SortCorrect(){//4
-        Integer[] data = {2,3,5,4,1};
-        BubbleSort<Integer>bs= new BubbleSort<>();
-        bs.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
-    }
-    private boolean isSorted (Integer[] data){
-        for (int i=0; i<data.length - 1;++i){
-            if (data[i]>data[i-1])
+
+    private boolean isSorted(Integer[] data){
+        for(int i=0; i<data.length-1; i++){
+            if(data[i]>data[i+1])
                 return false;
         }
         return true;
     }
-    //.................InsertionSort.java...................
+
+    //-----------BubbleSort------------------------------------------------
     @Test
-    public void InsertionSort_SortNotNeed_SortCorrect(){//6
-        Integer[] data = {1,1,1};
-        InsertionSort<Integer> is= new InsertionSort<>();
-        is.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,1,1}, data);
+    public void bubbleSort_ArrayWithThreeSimilarElements_ArrayStaysTheSame(){
+        Integer[] data={10,10,10};
+        BubbleSort<Integer> bs = new BubbleSort<>();
+        bs.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{10, 10,10}, data);
     }
     @Test
-    public void InsertionSort_sortDats_SortCorrect(){//8
-        Integer[] data = {2,3,5,4,1};
+    public void bubbleSort_SortedArray_ArrayStaysTheSame(){
+        BubbleSort<Integer> bs = new BubbleSort<>();
+        Integer[] data={1,2,3,4};
+        bs.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1,2,3,4}, data);
+    }
+    @Test
+    public void bubbleSort_UnSortedArray_ElementsChangeTheirPosition(){
+        BubbleSort<Integer> bs = new BubbleSort<>();
+        Integer[] data={1,4,3,2};
+        bs.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1,2,3,4}, data);
+    }
+    @Test
+    public void bubbleSort_ArrayWithOneUnsortedElement_SortOk(){
+        BubbleSort<Integer> bs = new BubbleSort<>();
+        Integer[] data={1,4,2,3,5};
+        bs.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
+    }
+
+    //-----------------SelectionSort----------------------------------------------
+    @Test
+    public void selectionSort_ArrayWithTheFirstMaxElem_SortOk(){
+        SelectionSort<Integer> ss = new SelectionSort<>();
+        Integer[] data={5,4,2};
+        ss.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{2,4,5}, data);
+    }
+    @Test
+    public void selectionSort_UnsortedArrayWithTwoElements_SortOk(){
+        SelectionSort<Integer> ss = new SelectionSort<>();
+        Integer[] data={5,4};
+        ss.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{4,5}, data);
+    }
+    @Test
+    public void selectionSort_UnsortedArray_SortOk(){
+        SelectionSort<Integer> ss = new SelectionSort<>();
+        Integer[] data={5,4,1,2,3};
+        ss.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
+    }
+
+    //----------------InsertionSort---------------------------------
+    @Test
+    public void insertionSort_sortedArrayWithTwoElements_ArrayDoesNotChange(){
         InsertionSort<Integer> is = new InsertionSort<>();
-        is.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
+        Integer[] data={4,5};
+        is.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{4,5}, data);
+    }
+    @Test
+    public void insertionSort_unsortedArrayWithTwoElements_SortIsOk(){
+        InsertionSort<Integer> is = new InsertionSort<>();
+        Integer[] data={5,4};
+        is.sort(data, new TestComparator());
+        assertArrayEquals(new Integer[]{4,5}, data);
     }
 
-    //.................SelectionSort.java....................
-    @Test
-    public void SelectionSort_SortNotNeed_SortCorrect(){//work
-        Integer[] data = {1,1,1};
-        SelectionSort<Integer>ss= new SelectionSort<>();
-        ss.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,1,1}, data);
-    }
-
-    @Test
-    public void SelectionSort_SortDats_SortOk(){//5
-        Integer[] data = {3,2,1};
-        SelectionSort<Integer>ss= new SelectionSort<>();
-        ss.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3}, data);
-    }
-    @Test
-    public void SelectionSort_sortTwoNumbers_SortCorrect(){//4 11 10
-        Integer[] data = {2,1};
-        SelectionSort<Integer>ss= new SelectionSort<>();
-        ss.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2}, data);
-    }
-    @Test
-    public void SelectionSort_sortDats_SortCorrect(){//8
-        Integer[] data = {2,3,5,4,1};
-        SelectionSort<Integer>ss= new SelectionSort<>();
-        ss.sort(data,new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
-    }
 }
