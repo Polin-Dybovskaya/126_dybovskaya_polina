@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95d47589-214f-4265-a990-c7a33034c1c3" name="Changes" comment="task_3 все вернооо">
+      <change beforePath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/DoubleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/DynamicArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/DynamicArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/Task1_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_1/out/production/126_Dybovskaya_task_1/Task1_Tests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
