@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01f1ac35-7585-4910-8124-12f2379f8441" name="Changes" comment="correct task1 полностью">
-      <change beforePath="$PROJECT_DIR$/../task_2/out/production/task_2/SelectionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/out/production/task_2/SelectionSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/out/production/task_2/Task2_Tests.class" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/out/production/task_2/Task2_Tests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/src/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/src/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_2/src/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/../task_2/src/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../task_3/126_Dybovskaya_task_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../task_3/126_Dybovskaya_task_3.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
