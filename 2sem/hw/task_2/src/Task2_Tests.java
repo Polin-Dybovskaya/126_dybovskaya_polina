@@ -40,7 +40,7 @@ public class Task2_Tests extends Assert{
     }
 
     @Test
-    public void bubbleSort_InvertedArray_GetSortedArray(){//
+    public void bubbleSort_InvertedArray_GetSortedArray(){///
         BubbleSort<Integer> bubbleSort = new BubbleSort<>();
         Integer[] arr = {3, 2, 1};
         bubbleSort.sort(arr, new TestComparator());
