@@ -19,32 +19,40 @@ public class Task2_Tests extends Assert{
 
     //-----------BubbleSort------------------------------------------------
     @Test
-    public void bubbleSort_ArrayWithThreeSimilarElements_ArrayStaysTheSame(){
-        Integer[] data={10,10,10};
-        BubbleSort<Integer> bs = new BubbleSort<>();
-        bs.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{10, 10,10}, data);
+    public void bubbleSort_ArrayOnlyNumbersOne_ArrayNotChanged(){//5
+        try {
+            BubbleSort<Integer> bubbleSort = new BubbleSort<>();
+            Integer[] arr = {1, 1, 1};
+            bubbleSort.sort(arr, new TestComparator());
+            assertArrayEquals(new Integer[]{1, 1, 1}, arr);
+        }
+        catch (Exception e){
+            fail();
+        }
     }
+
     @Test
-    public void bubbleSort_SortedArray_ArrayStaysTheSame(){
-        BubbleSort<Integer> bs = new BubbleSort<>();
-        Integer[] data={1,2,3,4};
-        bs.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4}, data);
+    public void bubbleSort_InvertedArrayWithTheSameLastTheBiggestElement_GetSortedArray(){ //6
+        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
+        Integer[] arr = {3, 2, 1, 4};
+        bubbleSort.sort(arr, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 3, 4}, arr);
     }
+
     @Test
-    public void bubbleSort_UnSortedArray_ElementsChangeTheirPosition(){
-        BubbleSort<Integer> bs = new BubbleSort<>();
-        Integer[] data={1,4,3,2};
-        bs.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4}, data);
+    public void bubbleSort_InvertedArray_GetSortedArray(){//
+        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
+        Integer[] arr = {3, 2, 1};
+        bubbleSort.sort(arr, new TestComparator());
+        assertArrayEquals(new Integer[]{1, 2, 3}, arr);
     }
+
     @Test
-    public void bubbleSort_ArrayWithOneUnsortedElement_SortOk(){
-        BubbleSort<Integer> bs = new BubbleSort<>();
-        Integer[] data={1,4,2,3,5};
-        bs.sort(data, new TestComparator());
-        assertArrayEquals(new Integer[]{1,2,3,4,5}, data);
+    public void bubbleSort_UnsortedArray_GetSortedArray(){
+        BubbleSort<Integer> bubbleSort = new BubbleSort<>();
+        Integer[] arr = {15,23,5,0};
+        bubbleSort.sort(arr, new TestComparator());
+        assertArrayEquals(new Integer[]{0, 5, 15, 23}, arr);
     }
 
     //-----------------SelectionSort----------------------------------------------
